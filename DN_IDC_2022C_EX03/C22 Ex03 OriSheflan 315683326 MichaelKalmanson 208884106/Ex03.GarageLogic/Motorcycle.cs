@@ -24,7 +24,6 @@ namespace Ex03.GarageLogic
             return listOfWheels;
         }
 
-        // $G$ CSS-999 (-3) Properties should be in form of PascalCase.
         public eLicenseType M_LicenseType
         {
             get
