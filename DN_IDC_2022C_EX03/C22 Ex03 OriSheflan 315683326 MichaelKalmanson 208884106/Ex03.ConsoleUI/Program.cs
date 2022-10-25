@@ -5,15 +5,11 @@ namespace Ex03.ConsoleUI
 {
     public class Program
     {
-        // $G$ CSS-027 (-2) Unnecessary blank lines.
-
         public static void Main()
         {
             Run();
         }
-
-        // $G$ DSN-999 (-5) Those methods suppose to be inside another class, and then be invoked from the Main method.
-        // The program class should only contain the Main method.
+       
         public static void Run()
         {
             GarageManeger garageManeger = new GarageManeger();
