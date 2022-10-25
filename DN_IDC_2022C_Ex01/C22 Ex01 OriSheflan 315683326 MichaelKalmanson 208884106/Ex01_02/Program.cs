@@ -11,13 +11,11 @@
             System.Console.ReadLine();
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         public static void Print_diamond(int i_height)
         {
             printDiamondRecursive(i_height, 1, (i_height - 1) / 2);
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         private static void printDiamondRecursive(int i_height, int i_numStars, int i_numSpaces)
         {
             System.Text.StringBuilder lineOfDiamond = new System.Text.StringBuilder();
