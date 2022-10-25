@@ -7,13 +7,8 @@ using Ex02.ConsoleUtils;
 
 namespace ConsoleMemoryGame_UI
 {
-    // $G$ RUL-004 (-20) Wrong folder name format - should include your last names.
-    // $G$ SFN-003 (-8) The game doesn't allow the user to choose 5 as the number of rows or columns as asked
-    // in the assignement instructions.
     public class Program
     {
-        // $G$ DSN-999 (-10) You should have put the Main method only inside the Program class, and move all other
-        // methods into another class, which the Main method will instantiate and invoke it.
         public static void Main()
         {
             InitializeGame();
@@ -454,14 +449,3 @@ Your choice must consist of a number between 0 and {0}, and a letter between A a
         }
     }
 }
-/*
-@"    A   B   C   D   E   F
-    =========================
-  1 | H | E | L | L | O |   |
-    =========================
-  2 | B | O | D | E | K |   |
-    =========================
-  3 | Y | A | K | A | R | ! |
-    =========================
-  4 |   |   |   |   |   |   |
-    =========================";*/
