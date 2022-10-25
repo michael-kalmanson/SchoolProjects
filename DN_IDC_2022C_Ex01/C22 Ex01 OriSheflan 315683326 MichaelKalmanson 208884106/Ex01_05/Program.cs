@@ -52,7 +52,6 @@ namespace Ex01_05
             return isValid;
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         private static void printStatsForUser(string i_userInput)
         {
             int[] inputDigitsArr = convertInputToDigitsArray(i_userInput);
