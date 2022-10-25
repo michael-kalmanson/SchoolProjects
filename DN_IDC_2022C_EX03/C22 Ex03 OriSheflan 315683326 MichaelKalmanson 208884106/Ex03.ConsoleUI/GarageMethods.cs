@@ -200,8 +200,6 @@ namespace Ex03.ConsoleUI
                 }
                 i += 1;
             }
-            // $G$ CSS-027 (-2) Unnecessary blank lines.
-
         }
 
         public static void GetParametersToWheelsFromUser(out string manufacturerName, out float currentAirPressurePSI, float? maxAirPressurePSI)
