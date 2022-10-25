@@ -1,17 +1,10 @@
 ﻿namespace Ex01_01
-{
-    // $G$ THE-001 (-5) The explanation for the file being an assembly is lacking.
-    // The file is an assembly because it can be analysed by ILDASM.
-    // $G$ SFN-024 (-7) No output samples for exercise 3 (4, 5, 7, 8) were submitted.
+ {
     public class Program
     {
-        // $G$ CSS-999 (-2) Missing access modifier.
-        // $G$ CSS-999 (0) Should be in lower case.
         static int NUM_OF_NUMBERS = 3;
         static int NUM_OF_DIGITS = 7;
 
-        // $G$ DSN-006 (-5) The Main method should only be an access point to the program. Should look something like:
-        // public static void Main() { Run(); } 
         public static void Main()
         {
             string[] args = new string[2];
@@ -52,7 +45,6 @@ Please enter {0} numbers with in binary format (only 0's and 1's allowed), each 
             return userInput;
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         private static bool isInputValid(string i_input)
         {
             bool isInputValid = true;
@@ -78,7 +70,6 @@ Please enter {0} numbers with in binary format (only 0's and 1's allowed), each 
             return isInputValid;
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         private static int[] convertBinaryArrToDecimalArr(string[] i_userInputBinaryNumbers)
         {
             int[] decimalUserInput = new int[NUM_OF_NUMBERS];
@@ -100,7 +91,6 @@ Please enter {0} numbers with in binary format (only 0's and 1's allowed), each 
             return decimalUserInput;
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         private static void printStatsForUserInput(string[] i_binaryNums, int[] i_decimalNums)
         {
             System.Console.WriteLine();
@@ -109,7 +99,6 @@ Please enter {0} numbers with in binary format (only 0's and 1's allowed), each 
             printIfPalindrom(i_decimalNums);
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         private static void printAverageNumOfDigits(string[] i_binaryNums)
         {
             float numOf1 = 0;
@@ -137,7 +126,6 @@ Please enter {0} numbers with in binary format (only 0's and 1's allowed), each 
             System.Console.WriteLine(msg);
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         public static void printIfDividedBy3(int[] i_decimalNums, int i_numOfNumbers)
         {
             int numOfNumbersDividedBy3 = 0;
@@ -164,7 +152,6 @@ Please enter {0} numbers with in binary format (only 0's and 1's allowed), each 
             System.Console.WriteLine(msg);
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         private static void printIfPalindrom(int[] i_decimalNums)
         {
             string[] stringDecimalNums = System.Array.ConvertAll(i_decimalNums, num => num.ToString());
