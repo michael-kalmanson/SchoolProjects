@@ -4,8 +4,6 @@
     {
         static int LENGTH_OF_INPUT = 9;
 
-        // $G$ DSN-006 (-5) The Main method should only be an access point to the program. Should look something like:
-        // public static void Main() { Run(); } 
         public static void Main()
         {
             string userInput = readInputFromUser();
@@ -24,7 +22,6 @@
             System.Console.ReadLine();
         }
 
-        // $G$ NTT-999 (-10) You should have used Environment.NewLine instead of "\n".
         private static string readInputFromUser()
         {
             System.Console.WriteLine("Hello!\nPlease enter either a 9 English letters string (only lower or upper case letters allowed) or a 9 digits number (and then press enter)"); 
@@ -41,7 +38,6 @@
             return userInput;
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         private static bool isInputValid(string i_userInput)
         {
             bool isValid = true;
@@ -67,8 +63,6 @@
             return int.TryParse(i_userInput, out int o_intUserInput);
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
-        // $G$ NTT-005 (-10) You should have used the Char (class) methods such as IsDigit, IsLower, IsLetter etc.
         private static bool isInputWord(string i_userInput)
         {
             int lengthOfWord = i_userInput.Length;
@@ -147,7 +141,6 @@
             System.Console.WriteLine(msg);
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         private static void printIfDividedBy3(int i_userInputNum)
         {
             string isDividedBy3 = string.Empty;
