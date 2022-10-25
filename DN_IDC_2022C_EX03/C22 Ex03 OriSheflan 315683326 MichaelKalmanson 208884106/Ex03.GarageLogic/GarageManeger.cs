@@ -6,7 +6,6 @@ namespace Ex03.GarageLogic
 {
     public class GarageManeger
     {
-        // $G$ DSN-999 (-3) This Dictionary should be readonly.
         private Dictionary<string, GarageNote> m_GarageVehcleDictionary;
 
         public GarageManeger()
