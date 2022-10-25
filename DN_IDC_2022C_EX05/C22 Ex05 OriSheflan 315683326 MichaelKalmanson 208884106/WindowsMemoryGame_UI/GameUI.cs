@@ -6,7 +6,6 @@ namespace WindowsMemoryGame_UI
     public class GameUI
     {
         private GameForm m_GameForm;
-        // $G$ DSN-999 (-3) This member should have been readonly.
         private LoginForm m_LoginForm;
         private Game m_Game;
 
@@ -41,7 +40,6 @@ namespace WindowsMemoryGame_UI
             }
         }
 
-        // $G$ CSS-028 (-5) A method shouldn't contain more than 1 return statement.
         private string announceWinner()
         {
             string anotherGameQuestion = "Would you like to play another game Sir/Madam?";
@@ -83,7 +81,6 @@ Both players finished with a score of {0}!
             }
         }
 
-        // $G$ CSS-999 (-3) Public methods should start with an upper-case letter.
         public void buildGame()
         {
             int numOfRows = getNumOfRows(m_LoginForm.TextButtonBoardSize);
