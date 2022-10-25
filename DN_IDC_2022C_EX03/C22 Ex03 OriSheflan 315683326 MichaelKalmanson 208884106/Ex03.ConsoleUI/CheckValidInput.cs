@@ -128,8 +128,6 @@ namespace Ex03.ConsoleUI
                 Console.WriteLine("Invalid input! please press number between 1-3. Please try again");
             }
             return validInput;
-
-            // $G$ CSS-027 (-2) Unnecessary blank lines.
         }
 
         public static bool InputForFualType(string i_NumberToCheck)
