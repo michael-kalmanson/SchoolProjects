@@ -3,7 +3,6 @@
     public class Player
     {
         private int m_Score;
-        // $G$ CSS-999 (-3) readonly members should be in form of r_PascalCased
         readonly public string m_PlayerName;
         private bool m_IsComputer;
 
@@ -33,7 +32,5 @@
         {
             this.m_Score++;
         }
-
-        // $G$ CSS-027 (-2) Unnecessary blank lines.
     }
 }
