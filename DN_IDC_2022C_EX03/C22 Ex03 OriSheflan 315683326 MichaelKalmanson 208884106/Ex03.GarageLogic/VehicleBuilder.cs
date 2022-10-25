@@ -5,7 +5,6 @@
         public static Vehicle BuildVehicle(eVehicleType i_VehicleType, string i_Model, string i_LicenseNumber)
         {
             Vehicle vehicleToReturn = null;
-            // $G$ CSS-999 (0) Switch cases blocks shouldn't be with curly brackets.
             switch (i_VehicleType)
             {
                 case eVehicleType.ElectricCar:
