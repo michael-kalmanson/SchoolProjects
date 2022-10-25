@@ -24,14 +24,12 @@ namespace Ex04.Menus.Delegates
             }
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         public void AddMenu(string i_name)
         {
             Menu newMenu = new Menu(i_name, this.CurrentMenu);
             this.CurrentMenu.MenuItems.Add(newMenu);
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         public void AddFunction(string i_name, Action i_ExcecutionFunction)
         {
             FunctionItem newFunction = new FunctionItem(i_name, this.CurrentMenu, i_ExcecutionFunction);
@@ -67,7 +65,6 @@ namespace Ex04.Menus.Delegates
             return intUserChoise;
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         public void EnterInnerLevel(int i_userInput)
         {
             Menu ChosenItem = CurrentMenu.MenuItems[i_userInput - 1] as Menu;
