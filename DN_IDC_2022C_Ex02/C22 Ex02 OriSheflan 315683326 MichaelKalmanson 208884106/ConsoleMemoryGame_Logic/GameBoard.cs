@@ -5,7 +5,6 @@ namespace ConsoleMemoryGame_Logic
 {
     public class GameBoard
     {
-        // $G$ DSN-999 (-3) This Array should be readonly.
         private Cell[,] m_Board;
         private (int, int) m_FirstCurrentlyExposedCellIndex;
         private (int, int) m_SecondCurrentlyExposedCellIndex;
@@ -22,14 +21,12 @@ namespace ConsoleMemoryGame_Logic
             initializeUnexposedCellsSetForComputer(this.m_UnexposedCellsIndex);
         }
 
-        // $G$ CSS-015 (-3) Bad variable name (should be in the form of ref io_PascalCase).
         private static void initializeGameBoard(Cell[,] io_board)
         {
             insertValuesToCards(io_board);
             MixBoard(io_board);
         }
 
-        // $G$ CSS-015 (-3) Bad variable name (should be in the form of ref io_PascalCase).
         private static void insertValuesToCards(Cell[,] io_board)
         {
             char newABCValue = 'A';
@@ -49,7 +46,6 @@ namespace ConsoleMemoryGame_Logic
             }
         }
 
-        // $G$ CSS-015 (-3) Bad variable name (should be in the form of ref io_PascalCase).
         private static void MixBoard(Cell[,] io_board)
         {
             Random rnd = new Random();
@@ -60,7 +56,6 @@ namespace ConsoleMemoryGame_Logic
             }
         }
 
-        // $G$ CSS-013 (-3) Bad parameter name (should be in the form of i_PascalCase).
         private static void SwapRandomallyTwoCellsInBoard(Cell[,] io_board, Random rnd)
         {
             int firstRndRowIndex = rnd.Next(0, io_board.GetLength(0));
