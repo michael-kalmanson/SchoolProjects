@@ -3,7 +3,6 @@ namespace ConsoleMemoryGame_Logic
 {
     public class Game
     {
-        // $G$ DSN-999 (-3) This member should be readonly.
         private GameBoard m_GameBoard;
         private Player m_Player1;
         private Player m_Player2;
